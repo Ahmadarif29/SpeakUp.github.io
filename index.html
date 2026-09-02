@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SpeakUp.AI - Tutor Bahasa Inggris AI Terbaik Anda</title>
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Google Fonts: Inter -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                    colors: {
+                        brand: {
+                            dark: '#062019',
+                            emerald: '#0c3b2e',
+                            green: '#10b981',
+                            lime: '#4ade80',
+                            accent: '#86efac',
+                            soft: '#ecfdf5',
+                            blue: '#2563eb'
+                        },
+                        whatsapp: '#25D366'
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        .glass-card {
+            background: rgba(255, 255, 255, 0.85);
+            backdrop-filter: blur(12px);
+        }
+        .pulse-slow {
+            animation: pulse 3s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+        }
+        .hover-lift {
+            transition: transform 0.25s ease, shadow 0.25s ease;
+        }
+        .hover-lift:hover {
+            transform: translateY(-4px);
+        }
+    </style>
+</head>
+<body class="bg-gray-100/70 text-gray-800 antialiased font-sans selection:bg-brand-lime selection:text-brand-dark">
+
+    <!-- Sticky Header Navbar -->
+    <header class="fixed top-0 left-0 right-0 z-50 px-4 sm:px-8 py-4">
+        <nav class="max-w-6xl mx-auto bg-white/90 backdrop-blur-md border border-gray-200/80 rounded-full px-5 py-3 shadow-sm flex items-center justify-between">
+            <!-- Brand Logo -->
+            <a href="#" class="flex items-center gap-2.5">
+                <div class="w-10 h-10 bg-brand-emerald text-brand-lime rounded-full flex items-center justify-center text-lg shadow-inner">
+                    <i class="fa-solid fa-microphone-lines"></i>
+                </div>
+                <span class="font-bold text-xl text-brand-dark tracking-tight">SpeakUp<span class="text-brand-green">.AI</span></span>
+            </a>
+
+            <!-- Nav Links -->
+            <div class="hidden md:flex items-center space-x-7 text-sm font-semibold text-gray-600">
+                <a href="#fitur" class="hover:text-brand-emerald transition">Fitur</a>
+                <a href="#cara-kerja" class="hover:text-brand-emerald transition">Cara Kerja</a>
+                <a href="#testimoni" class="hover:text-brand-emerald transition">Testimoni</a>
+                <a href="https://sites.google.com/view/englishsaya/speakup" target="_blank" class="hover:text-brand-green transition flex items-center gap-1.5 text-brand-emerald font-bold">
+                    <span>Web App</span>
+                    <i class="fa-solid fa-arrow-up-right-from-square text-xs"></i>
+                </a>
+            </div>
+
+            <!-- Action CTA -->
+            <div class="flex items-center gap-2">
+                <a href="https://wa.me/6281234567890?text=Halo%20SpeakUp.AI,%20saya%20tertarik%20mencoba!" target="_blank" 
+                   class="bg-brand-emerald hover:bg-brand-dark text-white px-5 py-2.5 rounded-full text-sm font-bold transition shadow-sm hover:shadow flex items-center gap-2">
+                    <i class="fa-brands fa-whatsapp text-brand-lime text-base"></i>
+                    <span class="hidden sm:inline">Hubungi WA</span>
+                </a>
+            </div>
+        </nav>
+    </header>
+
+    <main class="max-w-6xl mx-auto px-4 sm:px-6 pt-28 pb-16 space-y-12">
+
+        <!-- Hero Section -->
+        <section class="bg-brand-soft/80 border border-emerald-100 rounded-3xl p-6 sm:p-10 lg:p-12 relative overflow-hidden shadow-sm">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+                
+                <!-- Left Text Column -->
+                <div class="lg:col-span-7 space-y-6 text-center lg:text-left">
+                    <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-emerald-100 border border-emerald-200 text-brand-emerald font-semibold text-xs tracking-wide">
+                        <span class="w-2 h-2 rounded-full bg-brand-green animate-ping"></span>
+                        Tutor AI Bahasa Inggris Siap 24/7
+                    </div>
+
+                    <h1 class="text-3xl sm:text-5xl font-extrabold text-brand-dark leading-tight tracking-tight">
+                        Lancar Speaking <br class="hidden sm:block"/>Tanpa Rasa Malu
+                    </h1>
+
+                    <p class="text-gray-600 text-base sm:text-lg max-w-xl mx-auto lg:mx-0 font-normal">
+                        Tingkatkan kepercayaan diri Anda bicara Bahasa Inggris dengan AI interaktif. Dapatkan koreksi langsung, simulasi nyata, & feedback instant kapan saja.
+                    </p>
+
+                    <!-- CTA Buttons -->
+                    <div class="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-3.5 pt-2">
+                        <a href="https://sites.google.com/view/englishsaya/speakup" target="_blank" 
+                           class="w-full sm:w-auto bg-brand-emerald hover:bg-brand-dark text-white font-bold px-7 py-3.5 rounded-2xl shadow-md transition flex items-center justify-center gap-2 hover-lift">
+                            <span>Akses Web App Sekarang</span>
+                            <i class="fa-solid fa-arrow-right text-brand-lime"></i>
+                        </a>
+                        <a href="https://wa.me/6281234567890?text=Halo%20Admin,%20saya%20ingin%20tanya%20SpeakUp.AI" target="_blank" 
+                           class="w-full sm:w-auto bg-whatsapp hover:bg-emerald-600 text-white font-bold px-6 py-3.5 rounded-2xl shadow-md transition flex items-center justify-center gap-2 hover-lift">
+                            <i class="fa-brands fa-whatsapp text-xl"></i>
+                            <span>Tanya via WhatsApp</span>
+                        </a>
+                    </div>
+
+                    <!-- Trust Stats -->
+                    <div class="flex items-center justify-center lg:justify-start gap-6 pt-4 border-t border-emerald-200/60 text-xs font-semibold text-gray-500">
+                        <div class="flex items-center gap-1.5">
+                            <i class="fa-solid fa-check text-brand-green text-sm"></i>
+                            <span>Tanpa Download App</span>
+                        </div>
+                        <div class="flex items-center gap-1.5">
+                            <i class="fa-solid fa-check text-brand-green text-sm"></i>
+                            <span>Akses 24 Jam Nonstop</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Mockup Column -->
+                <div class="lg:col-span-5 flex justify-center">
+                    <div class="w-full max-w-[310px] bg-brand-dark p-3.5 rounded-[40px] shadow-2xl border-4 border-gray-800 relative">
+                        <!-- Speaker / Dynamic Island Notch -->
+                        <div class="w-28 h-5 bg-black rounded-full mx-auto mb-3 flex items-center justify-center gap-2">
+                            <div class="w-2.5 h-2.5 rounded-full bg-gray-900 border border-gray-800"></div>
+                            <div class="w-2.5 h-2.5 rounded-full bg-blue-900/60"></div>
+                        </div>
+
+                        <!-- Phone Content Screen -->
+                        <div class="bg-white rounded-[28px] p-4 text-xs space-y-3 min-h-[380px] flex flex-col justify-between">
+                            <!-- App Header -->
+                            <div class="flex items-center justify-between border-b pb-2.5">
+                                <div class="flex items-center gap-2">
+                                    <div class="w-7 h-7 bg-brand-emerald text-brand-lime rounded-full flex items-center justify-center text-xs font-bold">
+                                        <i class="fa-solid fa-robot"></i>
+                                    </div>
+                                    <div>
+                                        <p class="font-bold text-gray-900 text-[11px]">SpeakUp Voice</p>
+                                        <p class="text-[9px] text-brand-green font-medium">● Active Session</p>
+                                    </div>
+                                </div>
+                                <span class="bg-emerald-100 text-brand-emerald text-[9px] font-bold px-2 py-0.5 rounded-full">Pro</span>
+                            </div>
+
+                            <!-- Chat Bubbles -->
+                            <div class="space-y-2.5 my-auto">
+                                <div class="bg-gray-100 text-gray-800 p-2.5 rounded-2xl rounded-tl-none max-w-[90%]">
+                                    "Hello! Let's practice ordering food at a cafe. What would you like today?"
+                                </div>
+                                <div class="bg-brand-emerald text-white p-2.5 rounded-2xl rounded-tr-none ml-auto max-w-[90%] text-right shadow-xs">
+                                    "I want order one coffee and slice cake."
+                                </div>
+                                <div class="bg-emerald-50 border border-emerald-200 text-gray-800 p-2.5 rounded-2xl rounded-tl-none max-w-[95%] space-y-1">
+                                    <p class="font-semibold text-brand-emerald text-[10px]"><i class="fa-solid fa-wand-magic-sparkles"></i> Correction:</p>
+                                    <p class="text-gray-700">"I'd like to order a cup of coffee and a slice of cake, please."</p>
+                                </div>
+                            </div>
+
+                            <!-- Audio Input Visualizer -->
+                            <div class="bg-gray-50 border border-gray-200 p-2 rounded-2xl flex items-center gap-2">
+                                <button class="w-8 h-8 bg-brand-emerald text-brand-lime rounded-full flex items-center justify-center text-xs shrink-0 shadow">
+                                    <i class="fa-solid fa-microphone"></i>
+                                </button>
+                                <div class="flex-1 flex items-center justify-center gap-1 h-5">
+                                    <span class="w-1 h-3 bg-brand-green rounded-full animate-bounce"></span>
+                                    <span class="w-1 h-5 bg-brand-green rounded-full animate-bounce [animation-delay:0.1s]"></span>
+                                    <span class="w-1 h-2 bg-brand-green rounded-full animate-bounce [animation-delay:0.2s]"></span>
+                                    <span class="w-1 h-6 bg-brand-green rounded-full animate-bounce [animation-delay:0.3s]"></span>
+                                    <span class="w-1 h-4 bg-brand-green rounded-full animate-bounce [animation-delay:0.4s]"></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Key Features Section (Grid style matching input layout) -->
+        <section id="fitur" class="space-y-6">
+            <div class="text-center space-y-2">
+                <span class="border border-brand-green/40 text-brand-emerald bg-emerald-50 rounded-full text-xs px-3.5 py-1 font-bold uppercase tracking-wider">Features</span>
+                <h2 class="text-2xl sm:text-3xl font-extrabold text-brand-dark">Keunggulan Utama SpeakUp.AI</h2>
+                <p class="text-gray-600 text-sm max-w-lg mx-auto">Dirancang khusus untuk membantu Anda lancar percakapan Bahasa Inggris tanpa takut dihakimi.</p>
+            </div>
+
+            <!-- 3 Pill-style Card Features Row -->
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+                
+                <!-- Feature 1 -->
+                <div class="bg-white p-6 rounded-3xl border border-gray-200/80 shadow-sm hover:shadow-md transition hover-lift space-y-3">
+                    <div class="w-12 h-12 bg-emerald-100 text-brand-emerald rounded-2xl flex items-center justify-center text-xl font-bold">
+                        <i class="fa-regular fa-clock"></i>
+                    </div>
+                    <h3 class="font-bold text-lg text-brand-dark">Bicara Kapan Saja</h3>
+                    <p class="text-gray-600 text-sm leading-relaxed">Tutor AI siap sedia 24 jam nonstop. Latihan kapan pun Anda punya waktu luang tanpa janji temu.</p>
+                </div>
+
+                <!-- Feature 2 -->
+                <div class="bg-white p-6 rounded-3xl border border-gray-200/80 shadow-sm hover:shadow-md transition hover-lift space-y-3">
+                    <div class="w-12 h-12 bg-lime-100 text-brand-dark rounded-2xl flex items-center justify-center text-xl font-bold">
+                        <i class="fa-solid fa-spell-check"></i>
+                    </div>
+                    <h3 class="font-bold text-lg text-brand-dark">Koreksi Real-Time</h3>
+                    <p class="text-gray-600 text-sm leading-relaxed">Koreksi tata bahasa (grammar) dan struktur kalimat langsung diberikan saat Anda berbicara.</p>
+                </div>
+
+                <!-- Feature 3 -->
+                <div class="bg-white p-6 rounded-3xl border border-gray-200/80 shadow-sm hover:shadow-md transition hover-lift space-y-3">
+                    <div class="w-12 h-12 bg-blue-100 text-brand-blue rounded-2xl flex items-center justify-center text-xl font-bold">
+                        <i class="fa-solid fa-comments"></i>
+                    </div>
+                    <h3 class="font-bold text-lg text-brand-dark">Roleplay Skenario Nyata</h3>
+                    <p class="text-gray-600 text-sm leading-relaxed">Simulasi percakapan wawancara kerja, pemesanan restoran, hotel, hingga presentasi bisnis.</p>
+                </div>
+
+            </div>
+
+            <!-- Big Highlight Feature Card (Dark Green UI card like image) -->
+            <div class="bg-brand-dark text-white rounded-3xl p-8 sm:p-10 relative overflow-hidden flex flex-col sm:flex-row items-center justify-between gap-6 shadow-xl">
+                <div class="space-y-3 max-w-lg">
+                    <span class="text-brand-lime font-bold text-xs uppercase tracking-wider">Interactive Voice Engine</span>
+                    <h3 class="text-2xl sm:text-3xl font-extrabold leading-tight">Teknologi Voice Recognition Canggih</h3>
+                    <p class="text-emerald-100/80 text-sm">Respon suara alami, latihan aksen American/British, dan umpan balik kelancaran secara instant.</p>
+                </div>
+                <a href="https://sites.google.com/view/englishsaya/speakup" target="_blank" 
+                   class="w-14 h-14 bg-brand-lime hover:bg-white text-brand-dark rounded-full flex items-center justify-center text-xl shrink-0 transition shadow-lg hover:scale-110">
+                    <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                </a>
+            </div>
+        </section>
+
+        <!-- Cara Kerja Section (Blue / Emerald Card Container) -->
+        <section id="cara-kerja" class="bg-brand-emerald text-white rounded-3xl p-8 sm:p-12 space-y-8 shadow-lg">
+            <div class="text-center space-y-2">
+                <span class="bg-white/10 text-brand-lime border border-white/20 rounded-full text-xs px-3.5 py-1 font-bold uppercase tracking-wider">Workflow</span>
+                <h2 class="text-2xl sm:text-3xl font-extrabold">Cara Kerja Sangat Mudah</h2>
+                <p class="text-emerald-100 text-sm max-w-md mx-auto">Hanya dalam 3 langkah singkat Anda sudah bisa mulai latihan speaking.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-5">
+                
+                <!-- Step 1 -->
+                <div class="bg-white/95 text-brand-dark p-6 rounded-2xl space-y-3 shadow">
+                    <div class="w-10 h-10 bg-brand-emerald text-brand-lime rounded-full flex items-center justify-center font-extrabold text-base">
+                        1
+                    </div>
+                    <h3 class="font-bold text-base">Buka Web App</h3>
+                    <p class="text-gray-600 text-xs leading-relaxed">Klik link portal resmi kami di Google Site tanpa perlu proses install rumit.</p>
+                </div>
+
+                <!-- Step 2 -->
+                <div class="bg-white/95 text-brand-dark p-6 rounded-2xl space-y-3 shadow">
+                    <div class="w-10 h-10 bg-brand-emerald text-brand-lime rounded-full flex items-center justify-center font-extrabold text-base">
+                        2
+                    </div>
+                    <h3 class="font-bold text-base">Pilih Topik Percakapan</h3>
+                    <p class="text-gray-600 text-xs leading-relaxed">Pilih skenario situasi harian, karir, atau bebas ngobrol topik kesukaan Anda.</p>
+                </div>
+
+                <!-- Step 3 -->
+                <div class="bg-white/95 text-brand-dark p-6 rounded-2xl space-y-3 shadow">
+                    <div class="w-10 h-10 bg-brand-emerald text-brand-lime rounded-full flex items-center justify-center font-extrabold text-base">
+                        3
+                    </div>
+                    <h3 class="font-bold text-base">Mulai Latihan Speaking</h3>
+                    <p class="text-gray-600 text-xs leading-relaxed">Tekan tombol mikrofon, bicara langsung, dan sarah AI akan merespon ucapan Anda.</p>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Testimoni Section -->
+        <section id="testimoni" class="space-y-6">
+            <div class="text-center space-y-2">
+                <span class="border border-brand-green/40 text-brand-emerald bg-emerald-50 rounded-full text-xs px-3.5 py-1 font-bold uppercase tracking-wider">Reviews</span>
+                <h2 class="text-2xl sm:text-3xl font-extrabold text-brand-dark">Testimoni Pengguna</h2>
+                <p class="text-gray-600 text-sm">Cerita mereka yang sudah tampil percaya diri setelah latihan rutin.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-5">
+                
+                <!-- Testimonial 1 -->
+                <div class="bg-white p-6 rounded-3xl border border-gray-200/80 shadow-sm space-y-4">
+                    <div class="flex text-amber-400 text-xs gap-1">
+                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                    </div>
+                    <p class="text-gray-700 text-xs italic leading-relaxed">
+                        "Speaking jadi PD! Koreksi langsung dari AI sangat membantu perbaiki grammar tanpa bikin rasa insecure."
+                    </p>
+                    <div class="flex items-center gap-3 pt-2 border-t border-gray-100">
+                        <div class="w-9 h-9 bg-brand-emerald text-brand-lime rounded-full flex items-center justify-center font-bold text-xs">
+                            BS
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-xs text-brand-dark">Budi S.</h4>
+                            <p class="text-[10px] text-gray-400">Mahasiswa</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Testimonial 2 -->
+                <div class="bg-white p-6 rounded-3xl border border-gray-200/80 shadow-sm space-y-4">
+                    <div class="flex text-amber-400 text-xs gap-1">
+                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                    </div>
+                    <p class="text-gray-700 text-xs italic leading-relaxed">
+                        "Fitur simulasi interview kerja bahasa Inggris bikin saya sukses lolos wawancara perusahaan multinasional!"
+                    </p>
+                    <div class="flex items-center gap-3 pt-2 border-t border-gray-100">
+                        <div class="w-9 h-9 bg-brand-lime text-brand-dark rounded-full flex items-center justify-center font-bold text-xs">
+                            CD
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-xs text-brand-dark">Citra D.</h4>
+                            <p class="text-[10px] text-gray-400">Karyawan Swasta</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Testimonial 3 -->
+                <div class="bg-white p-6 rounded-3xl border border-gray-200/80 shadow-sm space-y-4">
+                    <div class="flex text-amber-400 text-xs gap-1">
+                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                    </div>
+                    <p class="text-gray-700 text-xs italic leading-relaxed">"Praktis banget bisa diakses dari HP tanpa download aplikasi berat. Langsung pakai via browser!"</p>
+                    <div class="flex items-center gap-3 pt-2 border-t border-gray-100">
+                        <div class="w-9 h-9 bg-blue-100 text-brand-blue rounded-full flex items-center justify-center font-bold text-xs">
+                            RA
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-xs text-brand-dark">Rian A.</h4>
+                            <p class="text-[10px] text-gray-400">Freelancer</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Main Call To Action Banner Section -->
+        <section class="bg-gradient-to-br from-brand-emerald via-brand-dark to-brand-emerald text-white rounded-3xl p-8 sm:p-12 text-center space-y-6 shadow-2xl relative overflow-hidden">
+            <div class="max-w-xl mx-auto space-y-3">
+                <span class="bg-brand-lime text-brand-dark font-extrabold text-xs px-3.5 py-1 rounded-full uppercase tracking-wider">Mulai Sekarang</span>
+                <h2 class="text-3xl sm:text-4xl font-extrabold leading-tight">Siap Kuasai Bahasa Inggris Hari Ini?</h2>
+                <p class="text-emerald-100 text-sm">Akses aplikasi atau hubungi layanan pendaftaran kami langsung melalui saluran resmi di bawah ini.</p>
+            </div>
+
+            <!-- Prominent Link Card Block -->
+            <div class="bg-white/10 backdrop-blur-md border border-white/20 p-4 rounded-2xl max-w-lg mx-auto flex flex-col sm:flex-row items-center justify-between gap-3 text-left">
+                <div class="truncate w-full">
+                    <p class="text-[10px] text-brand-lime font-bold uppercase tracking-wide">Official Google Sites Portal</p>
+                    <p class="text-xs font-mono text-white truncate">https://sites.google.com/view/englishsaya/speakup</p>
+                </div>
+                <a href="https://sites.google.com/view/englishsaya/speakup" target="_blank" 
+                   class="bg-brand-lime hover:bg-white text-brand-dark text-xs font-bold px-4 py-2 rounded-xl transition shrink-0">
+                    Buka Link
+                </a>
+            </div>
+
+            <!-- Double CTA Buttons -->
+            <div class="flex flex-col sm:flex-row items-center justify-center gap-4 pt-2">
+                <a href="https://sites.google.com/view/englishsaya/speakup" target="_blank" 
+                   class="w-full sm:w-auto bg-white hover:bg-gray-100 text-brand-dark font-extrabold px-8 py-4 rounded-2xl shadow-lg transition flex items-center justify-center gap-2.5 hover-lift">
+                    <span>Akses Google Sites Portal</span>
+                    <i class="fa-solid fa-arrow-up-right-from-square text-brand-green"></i>
+                </a>
+
+                <a href="https://wa.me/6281234567890?text=Halo%20SpeakUp.AI,%20saya%20ingin%20daftar%20sekarang!" target="_blank" 
+                   class="w-full sm:w-auto bg-whatsapp hover:bg-emerald-600 text-white font-extrabold px-8 py-4 rounded-2xl shadow-lg transition flex items-center justify-center gap-2.5 hover-lift">
+                    <i class="fa-brands fa-whatsapp text-xl"></i>
+                    <span>Daftar via WhatsApp</span>
+                </a>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-white border-t border-gray-200 mt-12 py-8 text-xs text-gray-500">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 flex flex-col sm:flex-row items-center justify-between gap-4 text-center sm:text-left">
+            <div class="flex items-center gap-2">
+                <div class="w-6 h-6 bg-brand-emerald text-brand-lime rounded-full flex items-center justify-center text-xs font-bold">
+                    <i class="fa-solid fa-microphone-lines"></i>
+                </div>
+                <span class="font-bold text-sm text-brand-dark">SpeakUp.AI</span>
+            </div>
+            
+            <p>&copy; 2026 SpeakUp.AI - Powered by Google Apps Script & Google Sites.</p>
+            
+            <div class="flex items-center gap-4 text-gray-600">
+                <a href="https://sites.google.com/view/englishsaya/speakup" target="_blank" class="hover:text-brand-green underline">Link Portal</a>
+                <a href="https://wa.me/6281234567890" target="_blank" class="hover:text-brand-green">Kontak WA</a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
